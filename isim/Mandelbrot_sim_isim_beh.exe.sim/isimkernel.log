@@ -1,0 +1,10 @@
+Command line:
+   Mandelbrot_sim_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  11341
+
+Mon Jan 08 16:10:50 2018
+
+
+ Elaboration Time: 0.078125 sec

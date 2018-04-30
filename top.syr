@@ -1,0 +1,1239 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-fbg676
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\SegmentDecoder.v" into library work
+Parsing module <SegmentDecoder>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\ShiftReg.v" into library work
+Parsing module <ShiftReg>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\Seg7Remap.v" into library work
+Parsing module <Seg7Remap>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\Seg7Decode.v" into library work
+Parsing module <Seg7Decode>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\mandelbrotColor.v" into library work
+Parsing module <mandelbrotColor>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\AntiJitter.v" into library work
+Parsing module <AntiJitter>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\vga.v" into library work
+Parsing module <vga>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\Seg7Device.v" into library work
+Parsing module <Seg7Device>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\MandelbrotGen.v" into library work
+Parsing module <MandelbrotGen>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\Keypad.v" into library work
+Parsing module <Keypad>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\ipcore_dir\ram.v" into library work
+Parsing module <ram>.
+Analyzing Verilog file "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" into library work
+Parsing module <top>.
+WARNING:HDLCompiler:751 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" Line 51: Redeclaration of ansi port Buzzer is not allowed
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" Line 74: Port dbg_keyLine is not connected to this instance
+WARNING:HDLCompiler:1016 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" Line 90: Port segment is not connected to this instance
+
+Elaborating module <top>.
+WARNING:HDLCompiler:872 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" Line 48: Using initial value of web since it is never assigned
+
+Elaborating module <Keypad>.
+
+Elaborating module <AntiJitter(WIDTH=4)>.
+
+Elaborating module <MandelbrotGen>.
+
+Elaborating module <mandelbrotColor>.
+WARNING:HDLCompiler:91 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\mandelbrotColor.v" Line 29: Signal <iterations> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\MandelbrotGen.v" Line 74: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\MandelbrotGen.v" Line 80: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\MandelbrotGen.v" Line 187: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\MandelbrotGen.v" Line 194: Result of 2-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <vga>.
+
+Elaborating module <ram>.
+WARNING:HDLCompiler:1499 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\ipcore_dir\ram.v" Line 39: Empty module <ram> remains a black box.
+WARNING:HDLCompiler:1127 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" Line 83: Assignment to doutA ignored, since the identifier is never used
+
+Elaborating module <Seg7Device>.
+
+Elaborating module <Seg7Decode>.
+
+Elaborating module <SegmentDecoder>.
+
+Elaborating module <Seg7Remap>.
+
+Elaborating module <ShiftReg(WIDTH=64)>.
+WARNING:HDLCompiler:413 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" Line 108: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:634 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" Line 43: Net <dinB[11]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v".
+INFO:Xst:3210 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" line 74: Output port <dbg_keyLine> of the instance <k0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" line 83: Output port <douta> of the instance <ram3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" line 90: Output port <segment> of the instance <segDevice> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.v" line 90: Output port <anode> of the instance <segDevice> is unconnected or connected to loadless signal.
+WARNING:Xst:2935 - Signal 'LED<7:4>', unconnected in block 'top', is tied to its initial value (1111).
+WARNING:Xst:2935 - Signal 'LED<2:0>', unconnected in block 'top', is tied to its initial value (111).
+WARNING:Xst:653 - Signal <dinB> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <LED<3>>.
+    Found 19-bit register for signal <addrB>.
+    Found 4-bit register for signal <r>.
+    Found 4-bit register for signal <g>.
+    Found 4-bit register for signal <b>.
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_1_o_add_1_OUT> created at line 63.
+    Found 19-bit adder for signal <addrB[18]_GND_1_o_add_14_OUT> created at line 108.
+    Found 10-bit comparator greater for signal <GND_1_o_vcount[9]_LessThan_10_o> created at line 106
+    Found 10-bit comparator greater for signal <vcount[9]_PWR_1_o_LessThan_11_o> created at line 106
+    Found 10-bit comparator greater for signal <GND_1_o_hcount[9]_LessThan_12_o> created at line 106
+    Found 10-bit comparator greater for signal <hcount[9]_PWR_1_o_LessThan_13_o> created at line 106
+    Found 19-bit comparator greater for signal <addrB[18]_PWR_1_o_LessThan_14_o> created at line 107
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  64 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <top> synthesized.
+
+Synthesizing Unit <Keypad>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\Keypad.v".
+    Found 4-bit register for signal <keyLineX>.
+    Found 1-bit register for signal <state>.
+    Found 5-bit register for signal <keyLineY>.
+    Found 1-bit tristate buffer for signal <keyX<3>> created at line 29
+    Found 1-bit tristate buffer for signal <keyX<2>> created at line 29
+    Found 1-bit tristate buffer for signal <keyX<1>> created at line 29
+    Found 1-bit tristate buffer for signal <keyX<0>> created at line 29
+    Found 1-bit tristate buffer for signal <keyY<4>> created at line 30
+    Found 1-bit tristate buffer for signal <keyY<3>> created at line 30
+    Found 1-bit tristate buffer for signal <keyY<2>> created at line 30
+    Found 1-bit tristate buffer for signal <keyY<1>> created at line 30
+    Found 1-bit tristate buffer for signal <keyY<0>> created at line 30
+    Summary:
+	inferred  10 D-type flip-flop(s).
+	inferred   9 Tristate(s).
+Unit <Keypad> synthesized.
+
+Synthesizing Unit <AntiJitter>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\AntiJitter.v".
+        WIDTH = 4
+    Found 4-bit register for signal <cnt>.
+    Found 1-bit register for signal <O>.
+    Found 4-bit subtractor for signal <cnt[3]_GND_12_o_sub_6_OUT> created at line 39.
+    Found 4-bit adder for signal <cnt[3]_GND_12_o_add_2_OUT> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+Unit <AntiJitter> synthesized.
+
+Synthesizing Unit <MandelbrotGen>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\MandelbrotGen.v".
+    Found 19-bit register for signal <addrA>.
+    Found 10-bit register for signal <x_count>.
+    Found 12-bit register for signal <iterations>.
+    Found 1-bit register for signal <calculating>.
+    Found 64-bit register for signal <base_x>.
+    Found 64-bit register for signal <base_y>.
+    Found 64-bit register for signal <shift_val>.
+    Found 64-bit register for signal <C_real_start>.
+    Found 64-bit register for signal <C_imag_start>.
+    Found 8-bit register for signal <remain>.
+    Found 64-bit register for signal <C_real>.
+    Found 64-bit register for signal <C_imag>.
+    Found 64-bit register for signal <Z_real>.
+    Found 64-bit register for signal <Z_imag>.
+    Found 1-bit register for signal <init>.
+    Found 1-bit register for signal <Count>.
+    Found 12-bit register for signal <dinA>.
+    Found 8-bit register for signal <ite>.
+    Found 1-bit register for signal <wasReady>.
+    Found 64-bit subtractor for signal <base_x[63]_shift_val[63]_sub_2_OUT> created at line 61.
+    Found 64-bit subtractor for signal <base_y[63]_shift_val[63]_sub_5_OUT> created at line 64.
+    Found 64-bit subtractor for signal <base_x[63]_shift_val[58]_sub_6_OUT> created at line 65.
+    Found 64-bit subtractor for signal <base_y[63]_shift_val[58]_sub_9_OUT> created at line 68.
+    Found 64-bit subtractor for signal <base_x[63]_GND_13_o_sub_12_OUT> created at line 72.
+    Found 64-bit subtractor for signal <base_x[63]_GND_13_o_sub_17_OUT> created at line 78.
+    Found 64-bit subtractor for signal <base_x[63]_GND_13_o_sub_55_OUT> created at line 94.
+    Found 64-bit subtractor for signal <base_x[63]_GND_13_o_sub_82_OUT> created at line 148.
+    Found 64-bit subtractor for signal <base_y[63]_GND_13_o_sub_90_OUT> created at line 149.
+    Found 64-bit subtractor for signal <n0374> created at line 171.
+    Found 64-bit subtractor for signal <C_imag[63]_shift_val[63]_sub_118_OUT> created at line 181.
+    Found 64-bit adder for signal <base_x[63]_shift_val[63]_add_2_OUT> created at line 62.
+    Found 64-bit adder for signal <base_y[63]_shift_val[63]_add_3_OUT> created at line 63.
+    Found 64-bit adder for signal <base_x[63]_shift_val[58]_add_6_OUT> created at line 66.
+    Found 64-bit adder for signal <base_y[63]_shift_val[58]_add_7_OUT> created at line 67.
+    Found 64-bit adder for signal <base_y[63]_GND_13_o_add_13_OUT> created at line 73.
+    Found 8-bit adder for signal <remain[7]_GND_13_o_add_14_OUT> created at line 74.
+    Found 64-bit adder for signal <base_y[63]_GND_13_o_add_18_OUT> created at line 79.
+    Found 64-bit adder for signal <base_y[63]_GND_13_o_add_56_OUT> created at line 95.
+    Found 64-bit adder for signal <Z_real[63]_Z_imag[63]_add_74_OUT> created at line 142.
+    Found 64-bit adder for signal <base_x[63]_GND_13_o_add_78_OUT> created at line 148.
+    Found 64-bit adder for signal <base_y[63]_GND_13_o_add_86_OUT> created at line 149.
+    Found 64-bit adder for signal <Z_real[63]_C_imag[63]_add_98_OUT> created at line 170.
+    Found 64-bit adder for signal <Z_real[63]_C_real[63]_add_100_OUT> created at line 171.
+    Found 12-bit adder for signal <iterations[11]_GND_13_o_add_101_OUT> created at line 172.
+    Found 64-bit adder for signal <C_real[63]_shift_val[63]_add_115_OUT> created at line 177.
+    Found 10-bit adder for signal <x_count[9]_GND_13_o_add_120_OUT> created at line 187.
+    Found 19-bit adder for signal <addrA[18]_GND_13_o_add_124_OUT> created at line 190.
+    Found 1-bit adder for signal <Count_PWR_5_o_add_139_OUT<0>> created at line 194.
+    Found 8-bit subtractor for signal <GND_13_o_GND_13_o_sub_20_OUT<7:0>> created at line 80.
+    Found 10x64-bit multiplier for signal <n0207> created at line 72.
+    Found 9x64-bit multiplier for signal <n0209> created at line 73.
+    Found 10x64-bit multiplier for signal <n0212> created at line 78.
+    Found 9x64-bit multiplier for signal <n0214> created at line 79.
+    Found 10x64-bit multiplier for signal <n0238> created at line 94.
+    Found 9x64-bit multiplier for signal <n0240> created at line 95.
+    Found 64x64-bit multiplier for signal <n0253> created at line 138.
+    Found 64x64-bit multiplier for signal <n0254> created at line 140.
+    Found 5x64-bit multiplier for signal <n0256> created at line 148.
+    Found 64x64-bit multiplier for signal <n0264> created at line 168.
+    Found 19-bit comparator greater for signal <PWR_5_o_addrA[18]_LessThan_71_o> created at line 123
+    Found 64-bit comparator greater for signal <Z_real[63]_GND_13_o_LessThan_76_o> created at line 144
+    Found 64-bit comparator greater for signal <base_x[63]_C_real[63]_LessThan_80_o> created at line 148
+    Found 64-bit comparator greater for signal <C_real[63]_base_x[63]_LessThan_83_o> created at line 148
+    Found 64-bit comparator equal for signal <C_imag[63]_base_y[63]_equal_84_o> created at line 148
+    Found 64-bit comparator equal for signal <C_real[63]_base_x[63]_equal_85_o> created at line 149
+    Found 64-bit comparator greater for signal <base_y[63]_C_imag[63]_LessThan_88_o> created at line 149
+    Found 64-bit comparator greater for signal <C_imag[63]_base_y[63]_LessThan_91_o> created at line 149
+    Summary:
+	inferred  10 Multiplier(s).
+	inferred  27 Adder/Subtractor(s).
+	inferred 649 D-type flip-flop(s).
+	inferred   8 Comparator(s).
+	inferred  54 Multiplexer(s).
+Unit <MandelbrotGen> synthesized.
+
+Synthesizing Unit <mandelbrotColor>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\mandelbrotColor.v".
+WARNING:Xst:647 - Input <iterations<11:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x12-bit Read Only RAM for signal <color>
+    Summary:
+	inferred   1 RAM(s).
+Unit <mandelbrotColor> synthesized.
+
+Synthesizing Unit <vga>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\vga.v".
+    Found 10-bit register for signal <vcount>.
+    Found 1-bit register for signal <nextline>.
+    Found 10-bit register for signal <hc>.
+    Found 1-bit register for signal <hsync>.
+    Found 10-bit register for signal <vc>.
+    Found 1-bit register for signal <vsync>.
+    Found 10-bit register for signal <hcount>.
+    Found 10-bit adder for signal <hc[9]_GND_19_o_add_2_OUT> created at line 23.
+    Found 10-bit adder for signal <vc[9]_GND_19_o_add_7_OUT> created at line 39.
+    Found 10-bit comparator lessequal for signal <hc[9]_GND_19_o_LessThan_5_o> created at line 27
+    Found 10-bit comparator lessequal for signal <vc[9]_GND_19_o_LessThan_10_o> created at line 42
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  43 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <vga> synthesized.
+
+Synthesizing Unit <Seg7Device>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\Seg7Device.v".
+    Found 4x4-bit Read Only RAM for signal <anode>
+    Found 8-bit 4-to-1 multiplexer for signal <segment> created at line 36.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplexer(s).
+Unit <Seg7Device> synthesized.
+
+Synthesizing Unit <Seg7Decode>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\Seg7Decode.v".
+    Summary:
+	no macro.
+Unit <Seg7Decode> synthesized.
+
+Synthesizing Unit <SegmentDecoder>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\SegmentDecoder.v".
+    Found 16x7-bit Read Only RAM for signal <segment>
+    Summary:
+	inferred   1 RAM(s).
+Unit <SegmentDecoder> synthesized.
+
+Synthesizing Unit <Seg7Remap>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\Seg7Remap.v".
+    Summary:
+	no macro.
+Unit <Seg7Remap> synthesized.
+
+Synthesizing Unit <ShiftReg>.
+    Related source file is "F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\ShiftReg.v".
+        WIDTH = 64
+        DELAY = 12
+    Found 1-bit register for signal <oe>.
+    Found 12-bit register for signal <counter>.
+    Found 65-bit register for signal <shift>.
+    Found 12-bit adder for signal <counter[11]_GND_25_o_add_5_OUT> created at line 54.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  78 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <ShiftReg> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 10
+ 16x12-bit single-port Read Only RAM                   : 1
+ 16x7-bit single-port Read Only RAM                    : 8
+ 4x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 10
+ 64x10-bit multiplier                                  : 3
+ 64x5-bit multiplier                                   : 1
+ 64x64-bit multiplier                                  : 3
+ 64x9-bit multiplier                                   : 3
+# Adders/Subtractors                                   : 33
+ 1-bit adder                                           : 1
+ 10-bit adder                                          : 3
+ 12-bit adder                                          : 2
+ 19-bit adder                                          : 2
+ 32-bit adder                                          : 1
+ 4-bit addsub                                          : 1
+ 64-bit adder                                          : 12
+ 64-bit subtractor                                     : 10
+ 8-bit addsub                                          : 1
+# Registers                                            : 40
+ 1-bit register                                        : 11
+ 10-bit register                                       : 5
+ 12-bit register                                       : 3
+ 19-bit register                                       : 2
+ 32-bit register                                       : 1
+ 4-bit register                                        : 5
+ 5-bit register                                        : 1
+ 64-bit register                                       : 9
+ 65-bit register                                       : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 15
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 2
+ 19-bit comparator greater                             : 2
+ 64-bit comparator equal                               : 2
+ 64-bit comparator greater                             : 5
+# Multiplexers                                         : 58
+ 1-bit 2-to-1 multiplexer                              : 6
+ 10-bit 2-to-1 multiplexer                             : 5
+ 12-bit 2-to-1 multiplexer                             : 4
+ 19-bit 2-to-1 multiplexer                             : 4
+ 64-bit 2-to-1 multiplexer                             : 37
+ 65-bit 2-to-1 multiplexer                             : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Tristates                                            : 9
+ 1-bit tristate buffer                                 : 9
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ram.ngc>.
+Loading core <ram> for timing and area information for instance <ram3>.
+WARNING:Xst:1290 - Hierarchical block <U1> is unconnected in block <segDevice>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <AntiJitter>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <AntiJitter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MandelbrotGen>.
+The following registers are absorbed into counter <remain>: 1 register on signal <remain>.
+The following registers are absorbed into counter <Count>: 1 register on signal <Count>.
+Unit <MandelbrotGen> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Seg7Device>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_anode> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <clkScan>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <anode>         |          |
+    -----------------------------------------------------------------------
+Unit <Seg7Device> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SegmentDecoder>.
+INFO:Xst:3231 - The small RAM <Mram_segment> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <hex>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segment>       |          |
+    -----------------------------------------------------------------------
+Unit <SegmentDecoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ShiftReg>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <ShiftReg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <mandelbrotColor>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_color> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 12-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <iterations>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <color>         |          |
+    -----------------------------------------------------------------------
+Unit <mandelbrotColor> synthesized (advanced).
+
+Synthesizing (advanced) Unit <top>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga>.
+The following registers are absorbed into counter <hc>: 1 register on signal <hc>.
+The following registers are absorbed into counter <vc>: 1 register on signal <vc>.
+Unit <vga> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 10
+ 16x12-bit single-port distributed Read Only RAM       : 1
+ 16x7-bit single-port distributed Read Only RAM        : 8
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Multipliers                                          : 10
+ 64x10-bit multiplier                                  : 3
+ 64x5-bit multiplier                                   : 1
+ 64x64-bit multiplier                                  : 3
+ 64x9-bit multiplier                                   : 3
+# Adders/Subtractors                                   : 26
+ 10-bit adder                                          : 1
+ 12-bit adder                                          : 1
+ 19-bit adder                                          : 2
+ 64-bit adder                                          : 12
+ 64-bit subtractor                                     : 10
+# Counters                                             : 7
+ 1-bit up counter                                      : 1
+ 10-bit up counter                                     : 2
+ 12-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+ 4-bit updown counter                                  : 1
+ 8-bit updown counter                                  : 1
+# Registers                                            : 772
+ Flip-Flops                                            : 772
+# Comparators                                          : 15
+ 10-bit comparator greater                             : 4
+ 10-bit comparator lessequal                           : 2
+ 19-bit comparator greater                             : 2
+ 64-bit comparator equal                               : 2
+ 64-bit comparator greater                             : 5
+# Multiplexers                                         : 122
+ 1-bit 2-to-1 multiplexer                              : 71
+ 10-bit 2-to-1 multiplexer                             : 5
+ 12-bit 2-to-1 multiplexer                             : 4
+ 19-bit 2-to-1 multiplexer                             : 4
+ 64-bit 2-to-1 multiplexer                             : 37
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <r_1> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <g_1> 
+INFO:Xst:2261 - The FF/Latch <r_2> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <g_2> 
+INFO:Xst:2261 - The FF/Latch <r_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <g_0> 
+INFO:Xst:2261 - The FF/Latch <r_3> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <g_3> 
+WARNING:Xst:2677 - Node <clkdiv_26> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_27> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_28> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_29> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_30> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_31> of sequential type is unconnected in block <top>.
+
+Optimizing unit <top> ...
+
+Optimizing unit <MandelbrotGen> ...
+
+Optimizing unit <Seg7Device> ...
+
+Optimizing unit <ShiftReg> ...
+
+Optimizing unit <vga> ...
+WARNING:Xst:2677 - Node <clkdiv_16> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_17> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_18> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_19> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_20> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_21> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_22> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_23> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_24> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <clkdiv_25> of sequential type is unconnected in block <top>.
+WARNING:Xst:1710 - FF/Latch <MandelbrotGen0/calculating> (without init value) has a constant value of 1 in block <top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <clkdiv_0> in Unit <top> is equivalent to the following FF/Latch, which will be removed : <MandelbrotGen0/Count> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 5.
+FlipFlop MandelbrotGen0/wasReady has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 829
+ Flip-Flops                                            : 829
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 10337
+#      GND                         : 2
+#      INV                         : 12
+#      LUT1                        : 91
+#      LUT2                        : 1513
+#      LUT3                        : 943
+#      LUT4                        : 550
+#      LUT5                        : 606
+#      LUT6                        : 1436
+#      MUXCY                       : 2353
+#      MUXF7                       : 468
+#      MUXF8                       : 234
+#      VCC                         : 2
+#      XORCY                       : 2127
+# FlipFlops/Latches                : 845
+#      FD                          : 637
+#      FDE                         : 127
+#      FDR                         : 23
+#      FDRE                        : 53
+#      FDS                         : 1
+#      FDSE                        : 4
+# RAMS                             : 109
+#      RAMB18E1                    : 1
+#      RAMB36E1                    : 108
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 38
+#      IBUF                        : 2
+#      IOBUF                       : 9
+#      OBUF                        : 27
+# DSPs                             : 71
+#      DSP48E1                     : 71
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tfbg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             844  out of  202800     0%  
+ Number of Slice LUTs:                 5151  out of  101400     5%  
+    Number used as Logic:              5151  out of  101400     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   5431
+   Number with an unused Flip Flop:    4587  out of   5431    84%  
+   Number with an unused LUT:           280  out of   5431     5%  
+   Number of fully used LUT-FF pairs:   564  out of   5431    10%  
+   Number of unique control sets:        21
+
+IO Utilization: 
+ Number of IOs:                          39
+ Number of bonded IOBs:                  39  out of    400     9%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:              109  out of    325    33%  
+    Number using Block RAM only:        109
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+ Number of DSP48E1s:                     71  out of    600    11%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+clk                                | BUFGP                   | 803   |
+clkdiv_1                           | BUFG                    | 70    |
+clkdiv_15                          | NONE(k0/rdyFilter/cnt_3)| 15    |
+clkdiv_3                           | BUFG                    | 78    |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                      | Buffer(FF name)                                                                                                                                       | Load  |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_10(ram3/XST_GND:G)                                                                                                                                                                 | NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[93].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B)| 186   |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[79].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[79].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[79].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[79].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[79].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[79].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[80].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[81].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[81].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[81].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[81].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[81].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[81].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[82].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[82].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[82].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[82].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[82].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[82].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[83].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[83].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[83].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[83].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[83].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[83].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[84].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[84].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[84].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[84].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[84].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[84].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[85].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[85].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[85].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[85].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[85].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[85].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[86].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[86].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[86].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[86].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[86].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[86].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[87].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[87].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[87].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[87].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[87].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[87].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[88].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[88].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[88].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[88].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[88].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[88].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[89].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[89].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[89].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[89].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[89].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[89].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[90].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[90].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[90].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[90].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[90].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[90].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[91].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[91].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[91].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[91].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[91].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[91].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[92].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[92].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[92].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[92].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[92].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[92].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[93].ram.r/v6_noinit.ram/cascadelata_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[93].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[93].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[93].ram.r/v6_noinit.ram/cascadelatb_tmp(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[93].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(ram3/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[93].ram.r/v6_noinit.ram/NO_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_T)| 1     |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 22.352ns (Maximum Frequency: 44.739MHz)
+   Minimum input arrival time before clock: 22.064ns
+   Maximum output required time after clock: 2.317ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv_1'
+  Clock period: 3.341ns (frequency: 299.351MHz)
+  Total number of paths / destination ports: 2509 / 128
+-------------------------------------------------------------------------
+Delay:               3.341ns (Levels of Logic = 4)
+  Source:            addrB_8 (FF)
+  Destination:       addrB_0 (FF)
+  Source Clock:      clkdiv_1 rising
+  Destination Clock: clkdiv_1 rising
+
+  Data Path: addrB_8 to addrB_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            111   0.236   0.758  addrB_8 (addrB_8)
+     LUT6:I0->O            1   0.043   0.522  addrB[18]_PWR_1_o_LessThan_14_o31 (addrB[18]_PWR_1_o_LessThan_14_o3)
+     LUT6:I2->O           20   0.043   0.601  addrB[18]_PWR_1_o_LessThan_14_o33 (addrB[18]_PWR_1_o_LessThan_14_o32)
+     LUT4:I1->O            9   0.043   0.450  addrB[18]_PWR_1_o_LessThan_14_o34 (addrB[18]_PWR_1_o_LessThan_14_o)
+     LUT6:I4->O           19   0.043   0.440  _n0096_inv4 (_n0096_inv)
+     FDE:CE                    0.161          addrB_0
+    ----------------------------------------
+    Total                      3.341ns (0.569ns logic, 2.772ns route)
+                                       (17.0% logic, 83.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 22.352ns (frequency: 44.739MHz)
+  Total number of paths / destination ports: 257723960789655470000000 / 1770
+-------------------------------------------------------------------------
+Delay:               22.352ns (Levels of Logic = 81)
+  Source:            MandelbrotGen0/wasReady_1 (FF)
+  Destination:       MandelbrotGen0/iterations_11 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: MandelbrotGen0/wasReady_1 to MandelbrotGen0/iterations_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.236   0.350  MandelbrotGen0/wasReady_1 (MandelbrotGen0/wasReady_1)
+     LUT2:I1->O           16   0.043   0.433  MandelbrotGen0/wasReady_keyReady_AND_5_o1_1 (MandelbrotGen0/wasReady_keyReady_AND_5_o1)
+     LUT6:I5->O            3   0.043   0.351  MandelbrotGen0/Mmux_shift_val[63]_keyCode[4]_mux_45_OUT210 (MandelbrotGen0/shift_val[63]_keyCode[4]_mux_45_OUT<10>)
+     DSP48E1:A10->PCOUT47    1   2.879   0.000  MandelbrotGen0/Mmult_n0238_submult_0 (MandelbrotGen0/Mmult_n0238_submult_0_PCOUT_to_Mmult_n0238_submult_01_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.219   0.000  MandelbrotGen0/Mmult_n0238_submult_01 (MandelbrotGen0/Mmult_n0238_submult_01_PCOUT_to_Mmult_n0238_submult_02_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.219   0.000  MandelbrotGen0/Mmult_n0238_submult_02 (MandelbrotGen0/Mmult_n0238_submult_02_PCOUT_to_Mmult_n0238_submult_03_PCIN_47)
+     DSP48E1:PCIN47->P7    1   1.077   0.350  MandelbrotGen0/Mmult_n0238_submult_03 (MandelbrotGen0/Mmult_n0238_submult_0_41)
+     LUT2:I1->O            1   0.043   0.000  MandelbrotGen0/Mmult_n02380_Madd_lut<41> (MandelbrotGen0/Mmult_n02380_Madd_lut<41>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<41> (MandelbrotGen0/Mmult_n02380_Madd_cy<41>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<42> (MandelbrotGen0/Mmult_n02380_Madd_cy<42>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<43> (MandelbrotGen0/Mmult_n02380_Madd_cy<43>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<44> (MandelbrotGen0/Mmult_n02380_Madd_cy<44>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<45> (MandelbrotGen0/Mmult_n02380_Madd_cy<45>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<46> (MandelbrotGen0/Mmult_n02380_Madd_cy<46>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<47> (MandelbrotGen0/Mmult_n02380_Madd_cy<47>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<48> (MandelbrotGen0/Mmult_n02380_Madd_cy<48>)
+     XORCY:CI->O           1   0.262   0.350  MandelbrotGen0/Mmult_n02380_Madd_xor<49> (MandelbrotGen0/n0238<49>)
+     LUT6:I5->O            1   0.043   0.000  MandelbrotGen0/Msub_base_x[63]_GND_13_o_sub_55_OUT_lut<49> (MandelbrotGen0/Msub_base_x[63]_GND_13_o_sub_55_OUT_lut<49>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Msub_base_x[63]_GND_13_o_sub_55_OUT_cy<49> (MandelbrotGen0/Msub_base_x[63]_GND_13_o_sub_55_OUT_cy<49>)
+     XORCY:CI->O           5   0.262   0.373  MandelbrotGen0/Msub_base_x[63]_GND_13_o_sub_55_OUT_xor<50> (MandelbrotGen0/base_x[63]_GND_13_o_sub_55_OUT<50>)
+     LUT6:I5->O            8   0.043   0.378  MandelbrotGen0/Mmux_GND_13_o_GND_13_o_equal_72_o11101 (MandelbrotGen0/Z_real[63]_base_x[63]_mux_67_OUT<50>)
+     DSP48E1:B16->PCOUT47    1   2.749   0.000  MandelbrotGen0/Mmult_n0253_submult_1 (MandelbrotGen0/Mmult_n0253_submult_1_PCOUT_to_Mmult_n0253_submult_11_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.219   0.000  MandelbrotGen0/Mmult_n0253_submult_11 (MandelbrotGen0/Mmult_n0253_submult_11_PCOUT_to_Mmult_n0253_submult_12_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.219   0.000  MandelbrotGen0/Mmult_n0253_submult_12 (MandelbrotGen0/Mmult_n0253_submult_12_PCOUT_to_Mmult_n0253_submult_13_PCIN_47)
+     DSP48E1:PCIN47->P0    1   1.077   0.350  MandelbrotGen0/Mmult_n0253_submult_13 (MandelbrotGen0/Mmult_n0253_submult_1_34)
+     LUT2:I1->O            1   0.043   0.000  MandelbrotGen0/Mmult_n02531_Madd_lut<34> (MandelbrotGen0/Mmult_n02531_Madd_lut<34>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<34> (MandelbrotGen0/Mmult_n02531_Madd_cy<34>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<35> (MandelbrotGen0/Mmult_n02531_Madd_cy<35>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<36> (MandelbrotGen0/Mmult_n02531_Madd_cy<36>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<37> (MandelbrotGen0/Mmult_n02531_Madd_cy<37>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<38> (MandelbrotGen0/Mmult_n02531_Madd_cy<38>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<39> (MandelbrotGen0/Mmult_n02531_Madd_cy<39>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<40> (MandelbrotGen0/Mmult_n02531_Madd_cy<40>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<41> (MandelbrotGen0/Mmult_n02531_Madd_cy<41>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<42> (MandelbrotGen0/Mmult_n02531_Madd_cy<42>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<43> (MandelbrotGen0/Mmult_n02531_Madd_cy<43>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<44> (MandelbrotGen0/Mmult_n02531_Madd_cy<44>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<45> (MandelbrotGen0/Mmult_n02531_Madd_cy<45>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<46> (MandelbrotGen0/Mmult_n02531_Madd_cy<46>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<47> (MandelbrotGen0/Mmult_n02531_Madd_cy<47>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<48> (MandelbrotGen0/Mmult_n02531_Madd_cy<48>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<49> (MandelbrotGen0/Mmult_n02531_Madd_cy<49>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<50> (MandelbrotGen0/Mmult_n02531_Madd_cy<50>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<51> (MandelbrotGen0/Mmult_n02531_Madd_cy<51>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<52> (MandelbrotGen0/Mmult_n02531_Madd_cy<52>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<53> (MandelbrotGen0/Mmult_n02531_Madd_cy<53>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<54> (MandelbrotGen0/Mmult_n02531_Madd_cy<54>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<55> (MandelbrotGen0/Mmult_n02531_Madd_cy<55>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<56> (MandelbrotGen0/Mmult_n02531_Madd_cy<56>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<57> (MandelbrotGen0/Mmult_n02531_Madd_cy<57>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<58> (MandelbrotGen0/Mmult_n02531_Madd_cy<58>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<59> (MandelbrotGen0/Mmult_n02531_Madd_cy<59>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<60> (MandelbrotGen0/Mmult_n02531_Madd_cy<60>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<61> (MandelbrotGen0/Mmult_n02531_Madd_cy<61>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<62> (MandelbrotGen0/Mmult_n02531_Madd_cy<62>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<63> (MandelbrotGen0/Mmult_n02531_Madd_cy<63>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<64> (MandelbrotGen0/Mmult_n02531_Madd_cy<64>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<65> (MandelbrotGen0/Mmult_n02531_Madd_cy<65>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<66> (MandelbrotGen0/Mmult_n02531_Madd_cy<66>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<67> (MandelbrotGen0/Mmult_n02531_Madd_cy<67>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<68> (MandelbrotGen0/Mmult_n02531_Madd_cy<68>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<69> (MandelbrotGen0/Mmult_n02531_Madd_cy<69>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<70> (MandelbrotGen0/Mmult_n02531_Madd_cy<70>)
+     MUXCY:CI->O           0   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<71> (MandelbrotGen0/Mmult_n02531_Madd_cy<71>)
+     XORCY:CI->O          18   0.262   0.445  MandelbrotGen0/Mmult_n02531_Madd_xor<72> (MandelbrotGen0/Mmult_n02531_Madd_72)
+     LUT2:I1->O            1   0.043   0.000  MandelbrotGen0/Mmult_n02532_Madd_lut<106> (MandelbrotGen0/Mmult_n02532_Madd_lut<106>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<106> (MandelbrotGen0/Mmult_n02532_Madd_cy<106>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<107> (MandelbrotGen0/Mmult_n02532_Madd_cy<107>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<108> (MandelbrotGen0/Mmult_n02532_Madd_cy<108>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<109> (MandelbrotGen0/Mmult_n02532_Madd_cy<109>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<110> (MandelbrotGen0/Mmult_n02532_Madd_cy<110>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<111> (MandelbrotGen0/Mmult_n02532_Madd_cy<111>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<112> (MandelbrotGen0/Mmult_n02532_Madd_cy<112>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<113> (MandelbrotGen0/Mmult_n02532_Madd_cy<113>)
+     XORCY:CI->O           3   0.262   0.417  MandelbrotGen0/Mmult_n02532_Madd_xor<114> (MandelbrotGen0/n0253<114>)
+     LUT2:I0->O            1   0.043   0.000  MandelbrotGen0/Madd_Z_real[63]_Z_imag[63]_add_74_OUT_lut<54> (MandelbrotGen0/Madd_Z_real[63]_Z_imag[63]_add_74_OUT_lut<54>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Madd_Z_real[63]_Z_imag[63]_add_74_OUT_cy<54> (MandelbrotGen0/Madd_Z_real[63]_Z_imag[63]_add_74_OUT_cy<54>)
+     XORCY:CI->O           1   0.262   0.603  MandelbrotGen0/Madd_Z_real[63]_Z_imag[63]_add_74_OUT_xor<55> (MandelbrotGen0/Z_real[63]_Z_imag[63]_add_74_OUT<55>)
+     LUT5:I0->O            1   0.043   0.000  MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_lut<11> (MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_lut<11>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_cy<11> (MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_cy<11>)
+     MUXCY:CI->O         255   0.013   0.521  MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_cy<12> (MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_cy<12>)
+     LUT5:I4->O           12   0.043   0.400  MandelbrotGen0/_n04371 (MandelbrotGen0/_n0437)
+     FDSE:S                    0.264          MandelbrotGen0/iterations_0
+    ----------------------------------------
+    Total                     22.352ns (17.028ns logic, 5.324ns route)
+                                       (76.2% logic, 23.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv_15'
+  Clock period: 3.023ns (frequency: 330.825MHz)
+  Total number of paths / destination ports: 504 / 20
+-------------------------------------------------------------------------
+Delay:               3.023ns (Levels of Logic = 4)
+  Source:            k0/keyLineY_2 (FF)
+  Destination:       k0/rdyFilter/O (FF)
+  Source Clock:      clkdiv_15 rising
+  Destination Clock: clkdiv_15 rising
+
+  Data Path: k0/keyLineY_2 to k0/rdyFilter/O
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.236   0.523  k0/keyLineY_2 (k0/keyLineY_2)
+     LUT3:I0->O            3   0.043   0.615  k0/Result<1>31 (k0/Result<1>_bdd7)
+     LUT6:I1->O            1   0.043   0.495  k0/Result<1>13 (k0/Result<1>12)
+     LUT6:I3->O            6   0.043   0.378  k0/Result<1>16 (k0/Result<1>_bdd0)
+     LUT5:I4->O            1   0.043   0.339  k0/rdyFilter/_n002311 (k0/rdyFilter/_n0023)
+     FDR:R                     0.264          k0/rdyFilter/O
+    ----------------------------------------
+    Total                      3.023ns (0.672ns logic, 2.351ns route)
+                                       (22.2% logic, 77.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv_3'
+  Clock period: 2.704ns (frequency: 369.821MHz)
+  Total number of paths / destination ports: 10086 / 156
+-------------------------------------------------------------------------
+Delay:               2.704ns (Levels of Logic = 12)
+  Source:            segDevice/U2/shift_45 (FF)
+  Destination:       segDevice/U2/shift_64 (FF)
+  Source Clock:      clkdiv_3 rising
+  Destination Clock: clkdiv_3 rising
+
+  Data Path: segDevice/U2/shift_45 to segDevice/U2/shift_64
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.236   0.618  segDevice/U2/shift_45 (segDevice/U2/shift_45)
+     LUT6:I0->O            1   0.043   0.000  segDevice/U2/out1_wg_lut<1> (segDevice/U2/out1_wg_lut<1>)
+     MUXCY:S->O            1   0.238   0.000  segDevice/U2/out1_wg_cy<1> (segDevice/U2/out1_wg_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<2> (segDevice/U2/out1_wg_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<3> (segDevice/U2/out1_wg_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<4> (segDevice/U2/out1_wg_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<5> (segDevice/U2/out1_wg_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<6> (segDevice/U2/out1_wg_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<7> (segDevice/U2/out1_wg_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<8> (segDevice/U2/out1_wg_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<9> (segDevice/U2/out1_wg_cy<9>)
+     MUXCY:CI->O          67   0.150   0.631  segDevice/U2/out1_wg_cy<10> (segDevice/U2/sckEn)
+     LUT3:I0->O           65   0.043   0.475  segDevice/U2/_n0033_inv1 (segDevice/U2/_n0033_inv)
+     FDE:CE                    0.161          segDevice/U2/shift_0
+    ----------------------------------------
+    Total                      2.704ns (0.980ns logic, 1.725ns route)
+                                       (36.2% logic, 63.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 63052378989655562000000 / 966
+-------------------------------------------------------------------------
+Offset:              22.064ns (Levels of Logic = 81)
+  Source:            SW0 (PAD)
+  Destination:       MandelbrotGen0/iterations_11 (FF)
+  Destination Clock: clk rising
+
+  Data Path: SW0 to MandelbrotGen0/iterations_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           202   0.000   0.774  SW0_IBUF (SW0_IBUF)
+     LUT6:I0->O            3   0.043   0.351  MandelbrotGen0/Mmux_shift_val[63]_keyCode[4]_mux_45_OUT210 (MandelbrotGen0/shift_val[63]_keyCode[4]_mux_45_OUT<10>)
+     DSP48E1:A10->PCOUT47    1   2.879   0.000  MandelbrotGen0/Mmult_n0238_submult_0 (MandelbrotGen0/Mmult_n0238_submult_0_PCOUT_to_Mmult_n0238_submult_01_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.219   0.000  MandelbrotGen0/Mmult_n0238_submult_01 (MandelbrotGen0/Mmult_n0238_submult_01_PCOUT_to_Mmult_n0238_submult_02_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.219   0.000  MandelbrotGen0/Mmult_n0238_submult_02 (MandelbrotGen0/Mmult_n0238_submult_02_PCOUT_to_Mmult_n0238_submult_03_PCIN_47)
+     DSP48E1:PCIN47->P7    1   1.077   0.350  MandelbrotGen0/Mmult_n0238_submult_03 (MandelbrotGen0/Mmult_n0238_submult_0_41)
+     LUT2:I1->O            1   0.043   0.000  MandelbrotGen0/Mmult_n02380_Madd_lut<41> (MandelbrotGen0/Mmult_n02380_Madd_lut<41>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<41> (MandelbrotGen0/Mmult_n02380_Madd_cy<41>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<42> (MandelbrotGen0/Mmult_n02380_Madd_cy<42>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<43> (MandelbrotGen0/Mmult_n02380_Madd_cy<43>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<44> (MandelbrotGen0/Mmult_n02380_Madd_cy<44>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<45> (MandelbrotGen0/Mmult_n02380_Madd_cy<45>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<46> (MandelbrotGen0/Mmult_n02380_Madd_cy<46>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<47> (MandelbrotGen0/Mmult_n02380_Madd_cy<47>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02380_Madd_cy<48> (MandelbrotGen0/Mmult_n02380_Madd_cy<48>)
+     XORCY:CI->O           1   0.262   0.350  MandelbrotGen0/Mmult_n02380_Madd_xor<49> (MandelbrotGen0/n0238<49>)
+     LUT6:I5->O            1   0.043   0.000  MandelbrotGen0/Msub_base_x[63]_GND_13_o_sub_55_OUT_lut<49> (MandelbrotGen0/Msub_base_x[63]_GND_13_o_sub_55_OUT_lut<49>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Msub_base_x[63]_GND_13_o_sub_55_OUT_cy<49> (MandelbrotGen0/Msub_base_x[63]_GND_13_o_sub_55_OUT_cy<49>)
+     XORCY:CI->O           5   0.262   0.373  MandelbrotGen0/Msub_base_x[63]_GND_13_o_sub_55_OUT_xor<50> (MandelbrotGen0/base_x[63]_GND_13_o_sub_55_OUT<50>)
+     LUT6:I5->O            8   0.043   0.378  MandelbrotGen0/Mmux_GND_13_o_GND_13_o_equal_72_o11101 (MandelbrotGen0/Z_real[63]_base_x[63]_mux_67_OUT<50>)
+     DSP48E1:B16->PCOUT47    1   2.749   0.000  MandelbrotGen0/Mmult_n0253_submult_1 (MandelbrotGen0/Mmult_n0253_submult_1_PCOUT_to_Mmult_n0253_submult_11_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.219   0.000  MandelbrotGen0/Mmult_n0253_submult_11 (MandelbrotGen0/Mmult_n0253_submult_11_PCOUT_to_Mmult_n0253_submult_12_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.219   0.000  MandelbrotGen0/Mmult_n0253_submult_12 (MandelbrotGen0/Mmult_n0253_submult_12_PCOUT_to_Mmult_n0253_submult_13_PCIN_47)
+     DSP48E1:PCIN47->P0    1   1.077   0.350  MandelbrotGen0/Mmult_n0253_submult_13 (MandelbrotGen0/Mmult_n0253_submult_1_34)
+     LUT2:I1->O            1   0.043   0.000  MandelbrotGen0/Mmult_n02531_Madd_lut<34> (MandelbrotGen0/Mmult_n02531_Madd_lut<34>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<34> (MandelbrotGen0/Mmult_n02531_Madd_cy<34>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<35> (MandelbrotGen0/Mmult_n02531_Madd_cy<35>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<36> (MandelbrotGen0/Mmult_n02531_Madd_cy<36>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<37> (MandelbrotGen0/Mmult_n02531_Madd_cy<37>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<38> (MandelbrotGen0/Mmult_n02531_Madd_cy<38>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<39> (MandelbrotGen0/Mmult_n02531_Madd_cy<39>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<40> (MandelbrotGen0/Mmult_n02531_Madd_cy<40>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<41> (MandelbrotGen0/Mmult_n02531_Madd_cy<41>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<42> (MandelbrotGen0/Mmult_n02531_Madd_cy<42>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<43> (MandelbrotGen0/Mmult_n02531_Madd_cy<43>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<44> (MandelbrotGen0/Mmult_n02531_Madd_cy<44>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<45> (MandelbrotGen0/Mmult_n02531_Madd_cy<45>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<46> (MandelbrotGen0/Mmult_n02531_Madd_cy<46>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<47> (MandelbrotGen0/Mmult_n02531_Madd_cy<47>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<48> (MandelbrotGen0/Mmult_n02531_Madd_cy<48>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<49> (MandelbrotGen0/Mmult_n02531_Madd_cy<49>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<50> (MandelbrotGen0/Mmult_n02531_Madd_cy<50>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<51> (MandelbrotGen0/Mmult_n02531_Madd_cy<51>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<52> (MandelbrotGen0/Mmult_n02531_Madd_cy<52>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<53> (MandelbrotGen0/Mmult_n02531_Madd_cy<53>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<54> (MandelbrotGen0/Mmult_n02531_Madd_cy<54>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<55> (MandelbrotGen0/Mmult_n02531_Madd_cy<55>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<56> (MandelbrotGen0/Mmult_n02531_Madd_cy<56>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<57> (MandelbrotGen0/Mmult_n02531_Madd_cy<57>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<58> (MandelbrotGen0/Mmult_n02531_Madd_cy<58>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<59> (MandelbrotGen0/Mmult_n02531_Madd_cy<59>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<60> (MandelbrotGen0/Mmult_n02531_Madd_cy<60>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<61> (MandelbrotGen0/Mmult_n02531_Madd_cy<61>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<62> (MandelbrotGen0/Mmult_n02531_Madd_cy<62>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<63> (MandelbrotGen0/Mmult_n02531_Madd_cy<63>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<64> (MandelbrotGen0/Mmult_n02531_Madd_cy<64>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<65> (MandelbrotGen0/Mmult_n02531_Madd_cy<65>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<66> (MandelbrotGen0/Mmult_n02531_Madd_cy<66>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<67> (MandelbrotGen0/Mmult_n02531_Madd_cy<67>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<68> (MandelbrotGen0/Mmult_n02531_Madd_cy<68>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<69> (MandelbrotGen0/Mmult_n02531_Madd_cy<69>)
+     MUXCY:CI->O           1   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<70> (MandelbrotGen0/Mmult_n02531_Madd_cy<70>)
+     MUXCY:CI->O           0   0.014   0.000  MandelbrotGen0/Mmult_n02531_Madd_cy<71> (MandelbrotGen0/Mmult_n02531_Madd_cy<71>)
+     XORCY:CI->O          18   0.262   0.445  MandelbrotGen0/Mmult_n02531_Madd_xor<72> (MandelbrotGen0/Mmult_n02531_Madd_72)
+     LUT2:I1->O            1   0.043   0.000  MandelbrotGen0/Mmult_n02532_Madd_lut<106> (MandelbrotGen0/Mmult_n02532_Madd_lut<106>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<106> (MandelbrotGen0/Mmult_n02532_Madd_cy<106>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<107> (MandelbrotGen0/Mmult_n02532_Madd_cy<107>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<108> (MandelbrotGen0/Mmult_n02532_Madd_cy<108>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<109> (MandelbrotGen0/Mmult_n02532_Madd_cy<109>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<110> (MandelbrotGen0/Mmult_n02532_Madd_cy<110>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<111> (MandelbrotGen0/Mmult_n02532_Madd_cy<111>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<112> (MandelbrotGen0/Mmult_n02532_Madd_cy<112>)
+     MUXCY:CI->O           1   0.013   0.000  MandelbrotGen0/Mmult_n02532_Madd_cy<113> (MandelbrotGen0/Mmult_n02532_Madd_cy<113>)
+     XORCY:CI->O           3   0.262   0.417  MandelbrotGen0/Mmult_n02532_Madd_xor<114> (MandelbrotGen0/n0253<114>)
+     LUT2:I0->O            1   0.043   0.000  MandelbrotGen0/Madd_Z_real[63]_Z_imag[63]_add_74_OUT_lut<54> (MandelbrotGen0/Madd_Z_real[63]_Z_imag[63]_add_74_OUT_lut<54>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Madd_Z_real[63]_Z_imag[63]_add_74_OUT_cy<54> (MandelbrotGen0/Madd_Z_real[63]_Z_imag[63]_add_74_OUT_cy<54>)
+     XORCY:CI->O           1   0.262   0.603  MandelbrotGen0/Madd_Z_real[63]_Z_imag[63]_add_74_OUT_xor<55> (MandelbrotGen0/Z_real[63]_Z_imag[63]_add_74_OUT<55>)
+     LUT5:I0->O            1   0.043   0.000  MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_lut<11> (MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_lut<11>)
+     MUXCY:S->O            1   0.238   0.000  MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_cy<11> (MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_cy<11>)
+     MUXCY:CI->O         255   0.013   0.521  MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_cy<12> (MandelbrotGen0/Mcompar_Z_real[63]_GND_13_o_LessThan_76_o_cy<12>)
+     LUT5:I4->O           12   0.043   0.400  MandelbrotGen0/_n04371 (MandelbrotGen0/_n0437)
+     FDSE:S                    0.264          MandelbrotGen0/iterations_0
+    ----------------------------------------
+    Total                     22.064ns (16.749ns logic, 5.314ns route)
+                                       (75.9% logic, 24.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv_1'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              1.478ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       addrB_0 (FF)
+  Destination Clock: clkdiv_1 rising
+
+  Data Path: reset to addrB_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           593   0.000   0.833  reset_IBUF (reset_IBUF)
+     LUT6:I0->O           19   0.043   0.440  _n0096_inv4 (_n0096_inv)
+     FDE:CE                    0.161          addrB_0
+    ----------------------------------------
+    Total                      1.478ns (0.204ns logic, 1.274ns route)
+                                       (13.8% logic, 86.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdiv_15'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              0.339ns (Levels of Logic = 1)
+  Source:            BTN_X<4> (PAD)
+  Destination:       k0/keyLineY_4 (FF)
+  Destination Clock: clkdiv_15 rising
+
+  Data Path: BTN_X<4> to k0/keyLineY_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           1   0.000   0.339  BTN_X_4_IOBUF (N8)
+     FDE:D                    -0.000          k0/keyLineY_4
+    ----------------------------------------
+    Total                      0.339ns (0.000ns logic, 0.339ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv_15'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              1.069ns (Levels of Logic = 2)
+  Source:            k0/state (FF)
+  Destination:       BTN_Y<3> (PAD)
+  Source Clock:      clkdiv_15 rising
+
+  Data Path: k0/state to BTN_Y<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.236   0.395  k0/state (k0/state)
+     INV:I->O              9   0.054   0.384  k0/state_inv1_INV_0 (k0/state_inv)
+     IOBUF:T->IO               0.000          BTN_Y_3_IOBUF (BTN_Y<3>)
+    ----------------------------------------
+    Total                      1.069ns (0.290ns logic, 0.779ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.973ns (Levels of Logic = 2)
+  Source:            clkdiv_3 (FF)
+  Destination:       SEGLED_CLK (PAD)
+  Source Clock:      clk rising
+
+  Data Path: clkdiv_3 to SEGLED_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.236   0.355  clkdiv_3 (clkdiv_3)
+     LUT2:I1->O            1   0.043   0.339  segDevice/U2/sck1 (SEGLED_CLK_OBUF)
+     OBUF:I->O                 0.000          SEGLED_CLK_OBUF (SEGLED_CLK)
+    ----------------------------------------
+    Total                      0.973ns (0.279ns logic, 0.694ns route)
+                                       (28.7% logic, 71.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv_1'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              0.580ns (Levels of Logic = 1)
+  Source:            r_3 (FF)
+  Destination:       r<3> (PAD)
+  Source Clock:      clkdiv_1 rising
+
+  Data Path: r_3 to r<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.236   0.344  r_3 (r_3)
+     OBUF:I->O                 0.000          r_3_OBUF (r<3>)
+    ----------------------------------------
+    Total                      0.580ns (0.236ns logic, 0.344ns route)
+                                       (40.7% logic, 59.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv_3'
+  Total number of paths / destination ports: 66 / 3
+-------------------------------------------------------------------------
+Offset:              2.317ns (Levels of Logic = 13)
+  Source:            segDevice/U2/shift_45 (FF)
+  Destination:       SEGLED_CLK (PAD)
+  Source Clock:      clkdiv_3 rising
+
+  Data Path: segDevice/U2/shift_45 to SEGLED_CLK
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.236   0.618  segDevice/U2/shift_45 (segDevice/U2/shift_45)
+     LUT6:I0->O            1   0.043   0.000  segDevice/U2/out1_wg_lut<1> (segDevice/U2/out1_wg_lut<1>)
+     MUXCY:S->O            1   0.238   0.000  segDevice/U2/out1_wg_cy<1> (segDevice/U2/out1_wg_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<2> (segDevice/U2/out1_wg_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<3> (segDevice/U2/out1_wg_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<4> (segDevice/U2/out1_wg_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<5> (segDevice/U2/out1_wg_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<6> (segDevice/U2/out1_wg_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<7> (segDevice/U2/out1_wg_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<8> (segDevice/U2/out1_wg_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  segDevice/U2/out1_wg_cy<9> (segDevice/U2/out1_wg_cy<9>)
+     MUXCY:CI->O          67   0.151   0.541  segDevice/U2/out1_wg_cy<10> (segDevice/U2/sckEn)
+     LUT2:I0->O            1   0.043   0.339  segDevice/U2/sck1 (SEGLED_CLK_OBUF)
+     OBUF:I->O                 0.000          SEGLED_CLK_OBUF (SEGLED_CLK)
+    ----------------------------------------
+    Total                      2.317ns (0.819ns logic, 1.499ns route)
+                                       (35.3% logic, 64.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   22.352|         |         |         |
+clkdiv_1       |    2.016|         |         |         |
+clkdiv_15      |   24.560|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdiv_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.192|         |         |         |
+clkdiv_1       |    3.341|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdiv_15
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdiv_15      |    3.023|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdiv_3
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.921|         |         |         |
+clkdiv_3       |    2.704|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 67.00 secs
+Total CPU time to Xst completion: 66.61 secs
+ 
+--> 
+
+Total memory usage is 592368 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   36 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

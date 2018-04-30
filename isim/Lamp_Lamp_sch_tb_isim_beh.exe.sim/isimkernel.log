@@ -1,0 +1,28 @@
+Command line:
+   Lamp_Lamp_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  13680
+
+Mon Jan 08 18:33:04 2018
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 885.125 Meg
+
+ Total Signals          : 117
+ Total Nets             : 46
+ Total Signal Drivers   : 38
+ Total Blocks           : 34
+ Total Primitive Blocks : 31
+ Total Processes        : 40
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 129
+
+ Total Simulation Time: 0.15625 sec
+
+ Current Memory Usage: 413.266 Meg
+
+Mon Jan 08 19:43:33 2018
+

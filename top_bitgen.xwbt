@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.ncd
+OUTFILE=F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste\top.bit
+FAMILY=Kintex7
+PART=xc7k160t-2lfbg676
+WORKINGDIR=F:\file\homework\Logic_and_computer_design\MANDELBROT-master\mandelbrot1.04_64bit\paste
+LICENSE=WebPack
+USER_INFO=__0_0_0

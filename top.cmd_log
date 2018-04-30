@@ -1,0 +1,226 @@
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.0/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.0/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.0/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.0/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.0/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.0/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.0/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.0/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.01/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.02_cursor/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.03_number/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.03_number/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.03_number/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.03_number/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.03_number/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.03_number/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.03_number/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.03_number/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_24bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_24bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.xst" -ofn "F:/file/homework/Logic_and_computer_design/MANDELBROT-master/mandelbrot1.04_64bit/paste/top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc YoDawg.ucf -p xc7k160t-fbg676-2L top.ngc top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+par -w -intstyle ise -ol high -mt off top_map.ncd top.ncd top.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf YoDawg.ucf 
+bitgen -intstyle ise -f top.ut top.ncd 
